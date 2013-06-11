@@ -34,7 +34,7 @@
                             :as => :text,
                             :input_html => { :class => "settings-redactor" } %>
               <% else %>
-                <%= f.input :string, :placeholder => "Default: " + setting.default_value %>
+                <%= f.input :string, :placeholder => setting.default_value %>
               <% end %>
             <% end %>
           <% end %>
