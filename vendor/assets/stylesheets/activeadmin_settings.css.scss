@@ -5,7 +5,7 @@
   tr th:first-child { width:30%; }
   tr th:last-child { width:15%; }
 
-  .update_link { display: none; }
+  .update_link { display: none; text-decoration: none; }
   .saved-state { display:none; }
   
   .option-type-html {
