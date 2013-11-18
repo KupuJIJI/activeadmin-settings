@@ -56,7 +56,6 @@ module ActiveadminSettings
     class Setting
       include Mongoid::Document
       include Mongoid::Timestamps
-      include Mongoid::Globalize
 
       # Fields
       field :name      
