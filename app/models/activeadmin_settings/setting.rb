@@ -59,12 +59,8 @@ module ActiveadminSettings
       include Mongoid::Globalize
 
       # Fields
-      field :name
-
-      translates do
-        field :string, :default => ""
-        fallbacks_for_empty_translations!
-      end
+      field :name      
+      field :string, :default => ""        
 
       include SettingMethods
 
