@@ -53,7 +53,7 @@ module ActiveadminSettings
       include PictureMethods
 
       # Scopes
-      default_scope order_by(:created_at => :desc)
+      default_scope ->{ order_by(:created_at => :desc) }
     end
   else
     class Picture < ActiveRecord::Base
@@ -63,7 +63,7 @@ module ActiveadminSettings
       include PictureMethods
 
       # Scopes
-      default_scope order('created_at desc')
+      default_scope ->{ order('created_at desc') }
     end
   end
 end
